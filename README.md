@@ -32,10 +32,17 @@ or
 which stow
 ```
 
-Clone the repo, `cd` into the `dotfiles` directory and run:
+Clone the repo, `cd` into the `dotfiles`.
+
+To stow all the configs run:
+```sh
+stow --dotfiles */ --ignore='.git' --ignore='README'
+```
+
+To stow individual configs run:
 
 ```sh
-stow --dotfiles
+stow --dotifiles <package-name> ...
 ```
 
 And that's it. Optionally, for a cleaner home, rename the `dotfiles` directory
