@@ -36,7 +36,7 @@ Clone the repo, `cd` into the `dotfiles`.
 
 To stow all the configs run:
 ```sh
-stow --dotfiles */ --ignore='.git' --ignore='README'
+stow --dotfiles */ --ignore='.git' --ignore='README.md'
 ```
 
 To stow individual configs run:
