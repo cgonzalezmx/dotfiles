@@ -32,7 +32,7 @@ or
 which stow
 ```
 
-Clone the repo, `cd` into the `dotfiles`.
+Clone the repo, `cd` into the `dotfiles` directory.
 
 To stow all the configs run:
 ```sh
