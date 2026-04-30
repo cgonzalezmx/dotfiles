@@ -1,0 +1,69 @@
+export BROWSER=firefox
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_DATA_HOME=$HOME/.local/share
+export XDG_CACHE=$HOME/.cache
+export XDG_STATE_HOME=$HOME/.local/state
+
+typeset -Ux XDG_DATA_DIRS xdg_data_dirs
+xdg_data_dirs=(
+    $XDG_DATA_HOME/flatpak/exports/share
+    /var/lib/exports/share
+)
+
+path+=(
+    $HOME/.local/bin
+    $XDG_CONFIG_HOME/composer/vendor/bin
+    $HOME/.local/bin/npm/bin
+    $XDG_DATA_HOME/gem/ruby/3.1.0/bin
+)
+
+
+nnn=(
+    NNN_OPT=coE
+    NNN_OPENER=nuke
+    NNN_TRASH=1
+    GUI=1
+)
+export $nnn
+unset nnn
+
+typeset -Tx NNN_BMS nnn_bms ';'
+nnn_bms=(
+    a:$HOME/Archivos
+    b:~/.local/bin
+    c:$XDG_CONFIG_HOME
+    e:/etc
+    m:/run/media/$USER
+    r:/
+    s:/$HOME
+)
+
+# necessary variables on Void Linux
+#export XDG_RUNTIME_DIR=/run/user/$UID
+#export SVDIR=$HOME/.local/service
+
+export _JAVA_AWT_WM_NONREPARENTING=1
+export BSPWM_SOCKET=$XDG_RUNTIME_DIR/bspwm-0
+export CHROME_FLAGS="--ozone-platform-hint=auto"
+export DIFFPROG='nvim -d'
+export EDITOR=nvim
+export GEM_HOME=$(ruby -e 'puts Gem.user_dir')
+export GNUPGHOME=$XDG_DATA_HOME/gnupg
+export GOPATH=$HOME/Proyectos/go
+export GPG_TTY=$(tty)
+export LESSHISTFILE=$XDG_CACHE_HOME/less/history
+export MOZ_ENABLE_WAYLAND=1
+export MPD_HOST=$XDG_RUNTIME_DIR/mpd.sock
+export MYSQL_HISTFILE=$XDG_CACHE_HOME/myslq_history
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/nmp/nmprc
+export PARALLEL_HOME=$XDG_CONFIG_HOME/parallel
+export PASSWORD_STORE_DIR=$XDG_DATA_HOME/pass
+export QT_QPA_PLATFORMTHEME=wayland
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent-0
+export SXHKD_SHELL=dash
+export WALLPAPER=$XDG_DATA_HOME/wallpaper
+export WINEPREFIX=$HOME/wine/default
+export XAUTHORITY=$XDG_RUNTIME_DIR/Xauthority
+export XCURSOR_PATH=$XDG_DATA_HOME/icons
+export npm_config_prefix=~/.local
+export XKB_DEFAULT_LAYOUT=latam

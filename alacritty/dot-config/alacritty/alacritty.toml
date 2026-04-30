@@ -1,0 +1,16 @@
+[cursor.style]
+blinking = "on"
+
+[font]
+size = 16.0
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+glyph_offset = { x = 0, y = 0 }
+builtin_box_drawing = false
+
+[window]
+decorations = "none"
+dimensions = { columns = 0, lines = 0 }
+padding = { x = 22, y = 22 }
+
+[general]
+import = ["~/.config/alacritty/current-theme.toml"]

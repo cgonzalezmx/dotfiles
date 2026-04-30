@@ -1,0 +1,17 @@
+require('vis')
+
+vis.events.subscribe( vis.events.INIT, function()
+--    vis:command( 'set change-256colors on' )
+    vis:command( 'set theme monokai-pro' )
+    vis:command( 'set shell /usr/bin/dash' )
+end)
+
+vis.events.subscribe( vis.events.WIN_OPEN, function( win )
+    vis:command( 'set number' )
+    vis:command( 'set colorcolumn 80' )
+    vis:command( 'set cursorline off' )
+    vis:command( 'set autoindent on' )
+    vis:command( 'set tabwidth 2' )
+    vis:command( 'set expandtab on' )
+--    vis:command( 'set show-spaces on' )
+end)

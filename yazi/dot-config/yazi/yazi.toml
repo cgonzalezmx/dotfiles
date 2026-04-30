@@ -1,0 +1,3 @@
+[input]
+rename_title = "Renombrar:"
+find_title = [ "Buscar siguiente:", "Buscar previo:" ]

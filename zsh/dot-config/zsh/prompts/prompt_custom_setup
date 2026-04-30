@@ -1,0 +1,8 @@
+prompt_custom_setup() {
+    local dir='%F{blue}%~%f'
+    local user='%F{magenta}%n%f'
+    local host='%F{yellow}%m%f'
+    PS1="╭─[${user}@${host}] - [%B$dir%b]${prompt_newline}╰─[%F{green}%f] "
+}
+
+prompt_custom_setup

@@ -1,0 +1,7 @@
+alias pacup="doas pacman -Syu"
+alias pacin="doas pacman -S"
+alias pacsr="pacman -Ss"
+alias cdc="cd ~/.config"
+alias cds="cd ~/.local/share"
+alias cdd="cd $(xdg-user-dir DOWNLOAD)" 
+alias sudo="doas su -c"

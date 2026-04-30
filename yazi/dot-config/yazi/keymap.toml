@@ -1,0 +1,23 @@
+[mgr]
+prepend_keymap = [
+    #Hopping
+    { on = ["g", "g"], run = "arrow top", desc = "Mover cursor a parte superior" },
+    { on = "G", run = "arrow bot", desc = "Mover cursor al fondo" },
+
+    #Goto
+    { on = ["g", "h"], run = "cd ~", desc = "Ir a home" },
+    { on = ["g", "c"], run ="cd ~/.config", desc = "Ir a ~./config" },
+    { on = ["g", "d"], run ="cd ~/Descargas", desc = "Ir a ~./Descargas" },
+    { on = ["g", "s"], run ="cd ~/.local/share", desc = "Ir a ~/.local/share" },
+    { on = ["g", "b"], run ="cd ~/.local/bin", desc = "Ir a ~/.local/bin" },
+    { on = ["g", "m"], run ="cd /run/media", desc = "Ir a /run/media" }
+]
+
+
+[confirm]
+keymap = [
+    { on = "<Esc>", run = "close", desc = "Cancelar" },
+    { on = "<Enter>", run = "close --submit", desc = "Confirmar" },
+    { on = "n", run = "close", desc = "Cancelar" },
+    { on = "s", run = "close --submit", desc = "Confirmar" }
+]
