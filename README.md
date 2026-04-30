@@ -23,7 +23,7 @@ Settings are for:
 To use them make, sure `stow` is installed:
 
 ```sh
-wheris stow
+whereis stow
 ```
 
 or 
