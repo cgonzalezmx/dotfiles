@@ -1,0 +1,13 @@
+{
+	"SFC": {
+		"prefix": ["vsfc"],
+		"body": [
+			"<script setup lang=\"ts\">",
+			"</script>",
+			"",
+			"<template>",
+			"	<div></div>",
+			"</template>"
+		]
+	}
+}

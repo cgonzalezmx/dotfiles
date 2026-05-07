@@ -1,0 +1,11 @@
+{
+	"Svelte component": {
+		"prefix": ["svelte-base"],
+		"body": [
+			"<script lang=\"ts\">",
+			"</script>",
+			"",
+			"<div></div>"
+		]
+	}
+}

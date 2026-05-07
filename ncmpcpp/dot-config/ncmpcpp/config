@@ -1,0 +1,10 @@
+ncmpcpp_directory = ~/.config/ncmpcpp
+lyrics_directory = ~/.config/ncmpcpp
+user_interface = alternative
+media_library_primary_tag = album_artist
+display_volume_level = yes
+message_delay_time = 0
+#playlist_separate_albums = yes
+playlist_display_mode = columns
+#execute_on_song_change = notify-send "Reproduciendo" "$(mpc --format '%title% \n%artist% - %album%' current)"
+#mpd_host = "192.168.1.166"
