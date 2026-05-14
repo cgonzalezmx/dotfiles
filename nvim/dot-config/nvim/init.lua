@@ -1,6 +1,0 @@
-require'config.lazy'
-require'config.settings'
-require'config.vue'
-require'config.filetypes'
-require'config.keymaps'
-require'config.hugo'

@@ -1,8 +1,0 @@
-#!/usr/bin/env python
-import hyprctl
-
-telegram_class = 'org.telegram.desktop'
-clients = hyprctl.clients()
-has_telegram = any(client['class'] == telegram_class for client in clients)
-dispatcher = 'togglespecialworkspace telegram' if has_telegram else ('exec flatpak run', telegram_class)
-hyprctl.dispatch(dispatcher)
